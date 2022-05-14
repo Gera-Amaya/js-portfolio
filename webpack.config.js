@@ -79,6 +79,12 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    hostoriApiFallbach: true,
+    port: 3006,
+  },
   optimization: {
     minimize: true,
     minimizer: [
